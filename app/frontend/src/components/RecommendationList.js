@@ -7,6 +7,8 @@ const RecommendationList = ({ recommendations }) => {
       <ul style={styles.list}>
         {recommendations.map((rec, index) => (
           <li key={index} style={styles.item}>
+            <div><strong>House ID:</strong> {rec.house_id}</div>
+            <div><strong>Address:</strong> {rec.address}</div>
             <div><strong>Price:</strong> ${rec.price}</div>
             <div><strong>Rooms:</strong> {rec.rooms}</div>
             <div><strong>Parking:</strong> {rec.parking}</div> {/* 👈 explicitly shown */}
